@@ -1,0 +1,74 @@
+
+{
+    "name": "My <name> Color Scheme",
+    "author": "dhruw lalan",
+    "variables":
+    {
+        "snow":                 "snow",
+        "palegoldenrod":        "palegoldenrod",
+        "khaki":                "khaki",
+        "yellow":               "yellow",
+        "deeppink":             "deeppink",
+        "springgreen":          "springgreen",
+        "rgba":                 "rgba(124, 124, 124, 0.2)",
+        "darkgray":             "darkgray",
+        "violet":               "violet",
+        "cyan":                 "cyan",
+        "orange":               "orange",
+        "hex":                  "#ff9999",
+        "mediumspringgreen":    "mediumspringgreen"
+    },
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"foreground",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"foreground",
+            "bracket_contents_foreground":"yellow",
+    },
+    "rules":
+    [
+        //  INVALID                 
+            {
+                "name": "Invalid",
+                "scope": "invalid",
+                "foreground": "#FFFFFF",
+                "background": "#FF1E00"
+            },
+        
+        
+        //  CATAGORY
+            /* new */ 
+            {
+                "name": "name",
+                "scope": "scope",
+                "foreground": "red",
+                "font_style": ""
+            },
+    ]
+}
