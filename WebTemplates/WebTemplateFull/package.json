@@ -6,8 +6,8 @@
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "dhruw",
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.14.1"
   }
