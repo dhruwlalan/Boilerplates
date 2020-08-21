@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js --open"
+    "start": "webpack-dev-server --config webpack.start.js --open"
   },
   "author": "dhruw",
   "license": "MIT",
@@ -30,10 +30,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
-    "moment": "^2.27.0",
-    "popper.js": "^1.16.1"
-  }
+  "dependencies": {}
 }
