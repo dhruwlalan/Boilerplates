@@ -1,5 +1,5 @@
 
-@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null) {
+@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null , $tt: null) {
 	@if $c != null {
 		color: $c;
 	}
@@ -23,6 +23,9 @@
 	}
 	@if $ls != null {
 		letter-spacing: $ls;
+	}
+	@if $tt != null {
+		text-transform: $tt;
 	}
 }
 
@@ -217,7 +220,7 @@
 	}
 }
 
-@mixin grid-item( $row: null , $col: null , $js: null , $as: null , $order: null ) {
+@mixin grid-item( $row: null , $col: null , $js: null , $as: null , $order: null , $area: null) {
 	@if $row != null {
 		grid-row: $row;
 	}
@@ -232,5 +235,8 @@
 	}
 	@if $order != null {
 		order: $order;
+	}
+	@if $area != null {
+		grid-area: $area;
 	}
 }
