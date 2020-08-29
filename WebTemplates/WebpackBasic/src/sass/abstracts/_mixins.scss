@@ -1,5 +1,5 @@
 
-@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null , $tt: null) {
+@mixin typo( $c: null , $ff: null , $fw: null , $fs: null , $lh: null , $td: null , $ws: null , $ls: null , $tt: null , $style: null) {
 	@if $c != null {
 		color: $c;
 	}
@@ -26,6 +26,9 @@
 	}
 	@if $tt != null {
 		text-transform: $tt;
+	}
+	@if $style != null {
+		font-style: $style;
 	}
 }
 
