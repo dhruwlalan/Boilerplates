@@ -12,7 +12,16 @@ module.exports = {
 	module: {
 		rules: [
 			{ test: /\.js$/, exclude: /node_modules/, use: ['babel-loader'] } ,
-			{ test: /\.scss$/ , use: ['style-loader', 'css-loader', 'sass-loader'] } ,
+			{ test: /\.scss$/ , use: [
+				'style-loader', 
+				{
+					loader: 'css-loader',
+					options: {
+			          url: false,
+			        },
+				}, 
+				'sass-loader']
+			} ,
 			{ test: /\.html$/ , use: ['html-loader'] } , 
 			{ test: /\.(jpeg|png|jpg|gif)$/ , use: {loader: 'file-loader' , options: {name: '[name].[ext]' , outputPath: 'assets/images'}} },
 			{ test: /\.svg$/ , use: {loader: 'file-loader' , options: {name: '[name].[ext]' , outputPath: 'assets/svg'}} },
@@ -20,7 +29,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src', 'index.html') }),
+		new HtmlWebpackPlugin({ 
+			filename: 'index.html',
+			template: path.resolve(__dirname, 'src', 'index.html'),
+			chunks: ['index']
+		}),
 	],
 	optimization: {
         splitChunks: {
