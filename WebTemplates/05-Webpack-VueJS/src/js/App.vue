@@ -1,7 +1,7 @@
 
 <template>
 	<div id="app">
-		<img src="../../assets/images/logo.png">
+		<img src="../assets/images/logo.png">
 		<h1>{{ msg }}</h1>
 		<h2>Essential Links</h2>
 		<ul>

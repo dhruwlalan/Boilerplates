@@ -1,9 +1,9 @@
 // ASSETS
-import './assets.js';
+import './assets/assets.js';
 
 // MAIN
 import Vue from 'vue';
-import App from './components/App.vue';
+import App from './App.vue';
 
 new Vue({
 	el: '#app',
