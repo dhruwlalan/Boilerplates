@@ -1,6 +1,8 @@
 
 <template>
-	<welcome></welcome>
+	<div>
+		<welcome></welcome>
+	</div>
 </template>
 
 <script>
@@ -11,3 +13,7 @@
 		}
 	}
 </script>
+
+<style lang="scss">
+	
+</style>

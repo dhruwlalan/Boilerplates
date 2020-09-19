@@ -13,13 +13,15 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.vue$/ ,
-				loader: 'vue-loader' ,
+				test: /\.html$/ ,
+				use: ['html-loader'] ,
 			} ,
 			{
-				test: /\.js$/ ,
-				exclude: /node_modules/ ,
-				use: ['babel-loader'] ,
+				test: /\.css$/ ,
+				use: [
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false } } ,
+				] ,
 			} ,
 			{
 				test: /\.scss$/ ,
@@ -30,22 +32,13 @@ module.exports = {
 				] ,
 			} ,
 			{
-				test: /\.html$/ ,
-				use: ['html-loader'] ,
-			} ,
-			{ 
-				test: /\.(jpeg|png|jpg|gif)$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/images' } ,
-				} ,
+				test: /\.js$/ ,
+				exclude: /node_modules/ ,
+				use: ['babel-loader'] ,
 			} ,
 			{
-				test: /\.svg$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/svg' } ,
-				} ,
+				test: /\.vue$/ ,
+				loader: 'vue-loader' ,
 			} ,
 			{
 				test: /\.ico$/ ,
@@ -54,7 +47,21 @@ module.exports = {
 					options: { name: 'favicon.ico' , outputPath: 'assets/favicon' } ,
 				} ,
 			} ,
-		]
+			{
+				test: /\.svg$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/svg' } ,
+				} ,
+			} ,
+			{ 
+				test: /\.(jpeg|png|jpg|gif)$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/images' } ,
+				} ,
+			} ,
+		] ,
 	} ,
 	plugins: [
 		new HtmlWebpackPlugin({ 

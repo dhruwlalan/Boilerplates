@@ -12,35 +12,28 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/ ,
-				exclude: /node_modules/ ,
-				use: ['babel-loader'] 
+				test: /\.html$/ ,
+				use: ['html-loader'] ,
+			} ,
+			{
+				test: /\.css$/ ,
+				use: [
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false, } } ,
+				] ,
 			} ,
 			{
 				test: /\.scss$/ , 
 				use: [
 					'style-loader' ,
-					{ loader: 'css-loader' , options: { url: false, } } , 
+					{ loader: 'css-loader' , options: { url: false, } } ,
 					'sass-loader' ,
 				] ,
 			} ,
 			{
-				test: /\.html$/ ,
-				use: ['html-loader'] ,
-			} ,
-			{
-				test: /\.(jpeg|png|jpg|gif)$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/images' } ,
-				} ,
-			} ,
-			{
-				test: /\.svg$/ ,
-				use: {
-					loader: 'file-loader' ,
-					options: { name: '[name].[ext]' , outputPath: 'assets/svg' } ,
-				} ,
+				test: /\.js$/ ,
+				exclude: /node_modules/ ,
+				use: ['babel-loader'] ,
 			} ,
 			{
 				test: /\.ico$/ ,
@@ -49,7 +42,21 @@ module.exports = {
 					options: { name: 'favicon.ico' , outputPath: 'assets/favicon'} ,
 				} ,
 			} ,
-		]
+			{
+				test: /\.svg$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/svg' } ,
+				} ,
+			} ,
+			{
+				test: /\.(jpeg|png|jpg|gif)$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/images' } ,
+				} ,
+			} ,
+		] ,
 	} ,
 	plugins: [
 		new HtmlWebpackPlugin({ 
