@@ -65,6 +65,11 @@ module.exports = {
 			chunks: ['index'] ,
 		}) ,
 	] ,
+	devServer: {
+	    historyApiFallback: true ,
+	    noInfo: true ,
+	    overlay: true ,
+	} ,
 	optimization: {
         splitChunks: {
             cacheGroups: {
