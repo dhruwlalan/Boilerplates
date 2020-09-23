@@ -63,6 +63,13 @@ module.exports = {
 					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/images' } ,
 				} ,
 			} ,
+			{
+				test: /\.(ttf|woff|woff2)$/ ,
+				use: {
+					loader: 'file-loader' ,
+					options: { name: '[name].[ext]' , esModule: false , outputPath: 'assets/fonts' } ,
+				} ,
+			} ,
 		] ,
 	} ,
 	plugins: [
