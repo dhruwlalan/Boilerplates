@@ -149,6 +149,21 @@
 	z-index: $z;
 	}
 
+@mixin pos-fixed(
+    $t: null, // top:
+    $b: null, // bottom:
+    $l: null, // left:
+    $r: null, // right:
+    $z: null, // z-index:
+) {
+    position: fixed;
+    top: $t;
+    bottom: $b;
+    left: $l;
+    right: $r;
+    z-index: $z;
+    }
+
 @mixin pos-sticky(
 	$t: null, // top:
 	$b: null, // bottom:
