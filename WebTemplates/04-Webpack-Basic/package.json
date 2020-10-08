@@ -10,9 +10,7 @@
         "dev": "webpack --config webpack.dev.js",
         "prod": "webpack --config webpack.prod.js"
     },
-    "dependencies": {
-        
-    },
+    "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.11.1",
         "@babel/preset-env": "^7.11.0",
