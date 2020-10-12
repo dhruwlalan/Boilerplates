@@ -1,17 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: 'production' ,
+	mode: 'development' ,
 	devtool: 'source-map' ,
-	entry: { index: './src/js/index.js' } ,
+	entry: { index: path.resolve(__dirname, '../src/js/index.js') } ,
 	output: {
-		filename: '[name].[contentHash].bundle.js' ,
-		path: path.resolve(__dirname, 'dist') ,
+		filename: '[name].bundle.js' ,
+		path: path.resolve(__dirname, '../dist') ,
 	} ,
 	module: {
 		rules: [
@@ -22,15 +18,15 @@ module.exports = {
 			{
 				test: /\.css$/ ,
 				use: [
-					MiniCssExtractPlugin.loader ,
-					{ loader: 'css-loader' , options: { url: false } } ,
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false, } } ,
 				] ,
 			} ,
 			{
-				test: /\.scss$/ ,
+				test: /\.scss$/ , 
 				use: [
-					MiniCssExtractPlugin.loader ,
-					{ loader: 'css-loader' , options: { url: false } } ,
+					'style-loader' ,
+					{ loader: 'css-loader' , options: { url: false, } } ,
 					'sass-loader' ,
 				] ,
 			} ,
@@ -43,7 +39,7 @@ module.exports = {
 				test: /\.ico$/ ,
 				use: {
 					loader: 'file-loader' ,
-					options: { name: 'favicon.ico' , outputPath: 'assets/favicon' } ,
+					options: { name: 'favicon.ico' , outputPath: 'assets/favicon'} ,
 				} ,
 			} ,
 			{
@@ -72,15 +68,17 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({ 
 			filename: 'index.html' ,
-			template: path.resolve(__dirname, 'src', 'index.html') ,
+			template: path.resolve(__dirname, '../src', 'index.html') ,
 			chunks: ['index'] ,
 		}) ,
-		new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }) ,
-		new CleanWebpackPlugin() ,
 	] ,
+	devServer: {
+	    historyApiFallback: true ,
+	    noInfo: true ,
+	    overlay: true ,
+	} ,
 	optimization: {
-		minimizer: [ new OptimizeCssAssetsPlugin() , new TerserPlugin() ] ,
-		splitChunks: {
+        splitChunks: {
             cacheGroups: {
                 vendors: {
                     test: /[\\/]node_modules[\\/]/ ,
@@ -90,5 +88,5 @@ module.exports = {
                 }
             }
         }
-	} ,
+    } ,
 };
