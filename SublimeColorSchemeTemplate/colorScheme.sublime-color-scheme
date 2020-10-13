@@ -4,19 +4,30 @@
     "author": "dhruw lalan",
     "variables":
     {
-        "snow":                 "snow",
-        "palegoldenrod":        "palegoldenrod",
-        "khaki":                "khaki",
-        "yellow":               "yellow",
-        "deeppink":             "deeppink",
-        "springgreen":          "springgreen",
-        "rgba":                 "rgba(124, 124, 124, 0.2)",
-        "darkgray":             "darkgray",
-        "violet":               "violet",
+        // colors Used
+        "white":                "white",
         "cyan":                 "cyan",
+        "springgreen":          "springgreen",
+        "mediumspringgreen":    "mediumspringgreen",
+        "deeppink":             "deeppink",
+        "hotpink":              "hotpink",
         "orange":               "orange",
-        "hex":                  "#ff9999",
-        "mediumspringgreen":    "mediumspringgreen"
+        "tomato":               "tomato",
+        "violet":               "violet",
+        "khaki":                "khaki",
+        "palegoldenrod":        "palegoldenrod",
+        "commentGray":          "#808080",
+        "invalidRed":           "#FF1E00",
+        "htmlString":           "#FFEE58",
+        "classyYellow":         "#F1FF7B",
+        "propertyYellow":       "#FFF969",
+        "dullYellow":           "#9F9C42",
+        "propertySkin":         "#ff9999",
+        "constantBlue":         "#9E6AFF",
+        //  variables
+        "operatorLight":    "palegoldenrod",
+        "operatorMedium":   "khaki",
+        "operatorDark":     "yellow",
     },
     "globals":
     {
@@ -46,10 +57,13 @@
             "find_highlight_foreground": "black",
             "find_highlight": "white",
         //  BRACKETS                
-            "brackets_options":"foreground",
+            "brackets_options":"bold",
             "brackets_foreground":"yellow",
-            "bracket_contents_options":"foreground",
-            "bracket_contents_foreground":"yellow",
+            "bracket_contents_options":"bold",
+            "bracket_contents_foreground":"mediumspringgreen",
+        //  TAGS                    
+            "tags_options":"bold",
+            "tags_foreground":"yellow",
     },
     "rules":
     [
@@ -62,7 +76,7 @@
             },
         
         
-        //  CATAGORY
+        //  CATAGORY 
             /* new */ 
             {
                 "name": "name",
