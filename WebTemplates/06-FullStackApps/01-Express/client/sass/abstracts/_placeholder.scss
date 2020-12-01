@@ -1,0 +1,5 @@
+@use "../abstracts" as *;
+
+%disable-selection {
+	@include disable-selection;
+}
