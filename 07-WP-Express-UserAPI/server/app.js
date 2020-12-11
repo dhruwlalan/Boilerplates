@@ -22,7 +22,7 @@ basic.gzipResponses(app);
 
 ///Define Routes///
 app.use('/api/users', userRouter);
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
    res.status(200).render('index', {
       msg: 'Hello, World!!',
    });

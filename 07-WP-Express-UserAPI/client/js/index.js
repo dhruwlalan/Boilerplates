@@ -1,2 +1,3 @@
-import './assets.js';
-/* ↙ start ↘ */
+import './assets';
+
+///START///

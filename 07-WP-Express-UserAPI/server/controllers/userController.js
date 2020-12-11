@@ -89,9 +89,7 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
 exports.updateData = catchAsync(async (req, res, next) => {
    //#1 Create error if user POSTs password data:#//
    if (req.body.password || req.body.passwordConfirm) {
-      return next(
-         new AppError('This route is not for password updates. Please use /updateMyPassword.', 400),
-      );
+      return next(new AppError('This route is not for password updates. Please use /updateMyPassword.', 400));
    }
 
    //#2 Filtered out unwanted fields names that are not allowed to be updated:#//
@@ -132,11 +130,7 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
 
 ///CRUD for Admin///
 exports.getAllUsers = catchAsync(async (req, res) => {
-   const features = new APIFeatures(User.find(), req.query)
-      .filter()
-      .sort()
-      .limitFields()
-      .paginate();
+   const features = new APIFeatures(User.find(), req.query).filter().sort().limitFields().paginate();
    const users = await features.query;
 
    sendResponse(res, 200, { users }, users.length);

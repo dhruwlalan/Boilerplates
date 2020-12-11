@@ -59,8 +59,7 @@ const handleDuplicateFields = (err) => {
    return err;
 };
 const handleJWTError = () => new AppError('Invalid Token. Please login again!', 401);
-const handleJWTExpiredError = () =>
-   new AppError('Your token has expired! Please login again!', 401);
+const handleJWTExpiredError = () => new AppError('Your token has expired! Please login again!', 401);
 
 module.exports = (err, _req, res, _next) => {
    err.statusCode = err.statusCode || 500;

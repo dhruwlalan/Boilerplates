@@ -50,13 +50,11 @@ exports.isLoggedIn = async (req, res, next) => {
 
 ///Protecting Routes to only Logged In Users///
 exports.protect = catchAsync(async (req, _res, next) => {
-   if (!req.token)
-      return next(new AppError('You are not logged in! Please login to get access', 401));
+   if (!req.token) return next(new AppError('You are not logged in! Please login to get access', 401));
 
    if (!req.user) return next(new AppError('The user belonging to the token dose not exist!', 401));
 
-   if (req.changedPassword)
-      return next(new AppError('User recently changed password! Please login again!', 401));
+   if (req.changedPassword) return next(new AppError('User recently changed password! Please login again!', 401));
 
    next();
 });

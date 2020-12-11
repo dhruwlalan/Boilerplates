@@ -22,11 +22,7 @@ router.patch('/updateMyPassword', userController.updatePassword);
 ///Admin Routes CRUD///
 router.use(authController.restrictTo('admin'));
 router.route('/').get(userController.getAllUsers).post(userController.createUser);
-router
-   .route('/:id')
-   .get(userController.getUser)
-   .patch(userController.updateUser)
-   .delete(userController.deleteUser);
+router.route('/:id').get(userController.getUser).patch(userController.updateUser).delete(userController.deleteUser);
 
 ///Handle Undefined Routes///
 router.all('*', (req, res) => {
