@@ -1,7 +1,0 @@
-.DS_Store
-node_modules
-debug.log
-/.editorconfig
-/.eslintrc.js
-/package-lock.json
-/package.json

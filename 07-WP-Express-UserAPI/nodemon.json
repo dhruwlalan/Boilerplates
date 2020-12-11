@@ -1,8 +1,4 @@
 {
-    "watch": [
-        "configs",
-        "views",
-        "server"
-    ],
-    "ext": "js,json,pug"
+   "watch": ["configs", "views", "server"],
+   "ext": "js,json,pug"
 }

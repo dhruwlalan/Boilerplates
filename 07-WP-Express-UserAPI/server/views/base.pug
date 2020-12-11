@@ -8,7 +8,7 @@ html(lang='en' dir='ltr')
 		link(rel='icon' href='/assets/favicon/favicon.ico?v=2')
 		- if ( process.env.FENV === 'production')
 			link(rel='stylesheet' href=`/${bundle.style}`)
-		
+
 	body
 		block content
 		block script
