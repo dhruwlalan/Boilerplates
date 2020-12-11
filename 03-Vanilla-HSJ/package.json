@@ -1,0 +1,14 @@
+{
+   "name": "vanilla-hsj",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "sass": "node-sass sass/main.scss css/style.css -w"
+   },
+   "author": "dhruw",
+   "license": "MIT",
+   "devDependencies": {
+      "node-sass": "^4.14.1"
+   }
+}
