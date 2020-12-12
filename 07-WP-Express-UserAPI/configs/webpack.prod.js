@@ -23,7 +23,10 @@ module.exports = {
       warnings: true,
       errors: true,
    },
-   plugins: [new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }), new CleanWebpackPlugin()],
+   plugins: [
+      new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
+      new CleanWebpackPlugin(),
+   ],
    optimization: {
       minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
       splitChunks: {

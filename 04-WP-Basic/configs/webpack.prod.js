@@ -12,6 +12,39 @@ module.exports = {
       filename: '[name].[contentHash].bundle.js',
       path: path.resolve(__dirname, '../dist'),
    },
+   stats: {
+      modules: false,
+      builtAt: false,
+      version: false,
+      timings: false,
+      entrypoints: false,
+      colors: true,
+      hash: false,
+      warnings: true,
+      errors: true,
+   },
+   plugins: [
+      new HtmlWebpackPlugin({
+         filename: 'index.html',
+         template: path.resolve(__dirname, '../src', 'index.html'),
+         chunks: ['index'],
+      }),
+      new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
+      new CleanWebpackPlugin(),
+   ],
+   optimization: {
+      minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
+      splitChunks: {
+         cacheGroups: {
+            vendors: {
+               test: /[\\/]node_modules[\\/]/,
+               name: 'vendor',
+               chunks: 'all',
+               enforce: true,
+            },
+         },
+      },
+   },
    module: {
       rules: [
          {
@@ -20,13 +53,32 @@ module.exports = {
          },
          {
             test: /\.css$/,
-            use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }],
+            use: [
+               MiniCssExtractPlugin.loader,
+               { loader: 'css-loader', options: { url: false } },
+               {
+                  loader: 'postcss-loader',
+                  options: {
+                     postcssOptions: {
+                        plugins: ['postcss-preset-env'],
+                     },
+                  },
+               },
+            ],
          },
          {
             test: /\.scss$/,
             use: [
                MiniCssExtractPlugin.loader,
                { loader: 'css-loader', options: { url: false } },
+               {
+                  loader: 'postcss-loader',
+                  options: {
+                     postcssOptions: {
+                        plugins: ['postcss-preset-env'],
+                     },
+                  },
+               },
                'sass-loader',
             ],
          },
@@ -64,27 +116,5 @@ module.exports = {
             },
          },
       ],
-   },
-   plugins: [
-      new HtmlWebpackPlugin({
-         filename: 'index.html',
-         template: path.resolve(__dirname, '../src', 'index.html'),
-         chunks: ['index'],
-      }),
-      new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
-      new CleanWebpackPlugin(),
-   ],
-   optimization: {
-      minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
-      splitChunks: {
-         cacheGroups: {
-            vendors: {
-               test: /[\\/]node_modules[\\/]/,
-               name: 'vendor',
-               chunks: 'all',
-               enforce: true,
-            },
-         },
-      },
    },
 };

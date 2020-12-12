@@ -9,6 +9,44 @@ module.exports = {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, '../dist'),
    },
+   devServer: {
+      contentBase: '../dist',
+      historyApiFallback: true,
+      overlay: true,
+      inline: true,
+      hot: true,
+   },
+   stats: {
+      assets: false,
+      modules: false,
+      builtAt: false,
+      version: false,
+      timings: false,
+      entrypoints: false,
+      colors: true,
+      hash: false,
+      warnings: true,
+      errors: true,
+   },
+   plugins: [
+      new HtmlWebpackPlugin({
+         filename: 'index.html',
+         template: path.resolve(__dirname, '../src', 'index.html'),
+         chunks: ['index'],
+      }),
+   ],
+   optimization: {
+      splitChunks: {
+         cacheGroups: {
+            vendors: {
+               test: /[\\/]node_modules[\\/]/,
+               name: 'vendor',
+               chunks: 'all',
+               enforce: true,
+            },
+         },
+      },
+   },
    module: {
       rules: [
          {
@@ -57,29 +95,5 @@ module.exports = {
             },
          },
       ],
-   },
-   plugins: [
-      new HtmlWebpackPlugin({
-         filename: 'index.html',
-         template: path.resolve(__dirname, '../src', 'index.html'),
-         chunks: ['index'],
-      }),
-   ],
-   devServer: {
-      historyApiFallback: true,
-      noInfo: true,
-      overlay: true,
-   },
-   optimization: {
-      splitChunks: {
-         cacheGroups: {
-            vendors: {
-               test: /[\\/]node_modules[\\/]/,
-               name: 'vendor',
-               chunks: 'all',
-               enforce: true,
-            },
-         },
-      },
    },
 };
