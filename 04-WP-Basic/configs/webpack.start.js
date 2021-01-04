@@ -4,10 +4,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
    mode: 'development',
    devtool: 'source-map',
-   entry: { index: path.resolve(__dirname, '../src/js/index.js') },
+   entry: { index: path.resolve(__dirname, '../src/main.js') },
    output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, '../dist'),
+   },
+   stats: {
+      warnings: true,
+      errors: true,
+      colors: true,
+      assets: false,
+      builtAt: false,
+      modules: false,
+      performance: false,
+      timings: false,
+      version: false,
+      entrypoints: false,
+      hash: false,
    },
    devServer: {
       contentBase: '../dist',
@@ -15,18 +28,8 @@ module.exports = {
       overlay: true,
       inline: true,
       hot: true,
-   },
-   stats: {
-      assets: false,
-      modules: false,
-      builtAt: false,
-      version: false,
-      timings: false,
-      entrypoints: false,
-      colors: true,
-      hash: false,
-      warnings: true,
-      errors: true,
+      port: 8000,
+      clientLogLevel: 'silent',
    },
    plugins: [
       new HtmlWebpackPlugin({
@@ -36,6 +39,7 @@ module.exports = {
       }),
    ],
    optimization: {
+      runtimeChunk: 'single',
       splitChunks: {
          cacheGroups: {
             vendors: {

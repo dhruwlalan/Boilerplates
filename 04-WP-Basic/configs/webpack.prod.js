@@ -4,15 +4,18 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const WebpackBar = require('webpackbar');
 
 module.exports = {
    mode: 'production',
-   entry: { index: path.resolve(__dirname, '../src/js/index.js') },
+   entry: { index: path.resolve(__dirname, '../src/main.js') },
    output: {
       filename: '[name].[contentHash].bundle.js',
       path: path.resolve(__dirname, '../dist'),
    },
    stats: {
+      assets: true,
       modules: false,
       builtAt: false,
       version: false,
@@ -22,6 +25,7 @@ module.exports = {
       hash: false,
       warnings: true,
       errors: true,
+      children: false,
    },
    plugins: [
       new HtmlWebpackPlugin({
@@ -31,6 +35,8 @@ module.exports = {
       }),
       new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
       new CleanWebpackPlugin(),
+      new WebpackBar(),
+      new BundleAnalyzerPlugin(),
    ],
    optimization: {
       minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
