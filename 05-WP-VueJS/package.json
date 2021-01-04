@@ -1,10 +1,12 @@
 {
    "name": "vue-template",
-   "version": "0.0.0",
+   "version": "1.0.0",
    "scripts": {
       "start": "webpack-dev-server --config configs/webpack.start.js",
       "prod": "webpack --config configs/webpack.prod.js",
-      "vite": "vite"
+      "vite": "vite",
+      "lint": "eslint .",
+      "lint:fix": "eslint --fix"
    },
    "dependencies": {
       "vue": "^3.0.4"
