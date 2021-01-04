@@ -1,8 +1,6 @@
 {
-   "name": "wp-express-userapi",
+   "name": "webpack-express-userapi-template",
    "version": "1.0.0",
-   "description": "Template for FullStack Express App.",
-   "main": "server.js",
    "author": "dhruw",
    "license": "MIT",
    "scripts": {

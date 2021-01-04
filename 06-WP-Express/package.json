@@ -1,8 +1,6 @@
 {
-   "name": "wp-express",
+   "name": "webpack-express-template",
    "version": "1.0.0",
-   "description": "Template for FullStack Express App.",
-   "main": "server.js",
    "author": "dhruw",
    "license": "MIT",
    "scripts": {

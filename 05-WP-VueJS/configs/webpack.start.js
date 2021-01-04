@@ -46,7 +46,6 @@ module.exports = {
       new VueLoaderPlugin(),
    ],
    optimization: {
-      runtimeChunk: 'single',
       splitChunks: {
          cacheGroups: {
             vendors: {

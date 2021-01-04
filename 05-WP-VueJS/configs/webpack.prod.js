@@ -17,15 +17,15 @@ module.exports = {
    },
    stats: {
       assets: true,
+      warnings: true,
+      errors: true,
+      colors: true,
       modules: false,
       builtAt: false,
       version: false,
       timings: false,
       entrypoints: false,
-      colors: true,
       hash: false,
-      warnings: true,
-      errors: true,
       children: false,
    },
    plugins: [
@@ -38,7 +38,10 @@ module.exports = {
       new CleanWebpackPlugin(),
       new VueLoaderPlugin(),
       new WebpackBar(),
-      new BundleAnalyzerPlugin(),
+      new BundleAnalyzerPlugin({
+         analyzerMode: 'disabled',
+         generateStatsFile: true,
+      }),
    ],
    optimization: {
       minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],

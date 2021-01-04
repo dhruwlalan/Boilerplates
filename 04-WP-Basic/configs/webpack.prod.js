@@ -4,39 +4,42 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const WebpackBar = require('webpackbar');
 
 module.exports = {
-   mode: "production",
-   entry: { index: path.resolve(__dirname, "../src/main.js") },
+   mode: 'production',
+   entry: { index: path.resolve(__dirname, '../src/main.js') },
    output: {
-      filename: "[name].[contentHash].bundle.js",
-      path: path.resolve(__dirname, "../dist"),
+      filename: '[name].[contentHash].bundle.js',
+      path: path.resolve(__dirname, '../dist'),
    },
    stats: {
+      warnings: true,
+      errors: true,
+      colors: true,
       assets: true,
       modules: false,
       builtAt: false,
       version: false,
       timings: false,
       entrypoints: false,
-      colors: true,
       hash: false,
-      warnings: true,
-      errors: true,
       children: false,
    },
    plugins: [
       new HtmlWebpackPlugin({
-         filename: "index.html",
-         template: path.resolve(__dirname, "../src", "index.html"),
-         chunks: ["index"],
+         filename: 'index.html',
+         template: path.resolve(__dirname, '../src', 'index.html'),
+         chunks: ['index'],
       }),
-      new MiniCssExtractPlugin({ filename: "style.[contentHash].css" }),
+      new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
       new CleanWebpackPlugin(),
       new WebpackBar(),
-      new BundleAnalyzerPlugin(),
+      new BundleAnalyzerPlugin({
+         analyzerMode: 'disabled',
+         generateStatsFile: true,
+      }),
    ],
    optimization: {
       minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
@@ -44,8 +47,8 @@ module.exports = {
          cacheGroups: {
             vendors: {
                test: /[\\/]node_modules[\\/]/,
-               name: "vendor",
-               chunks: "all",
+               name: 'vendor',
+               chunks: 'all',
                enforce: true,
             },
          },
@@ -58,18 +61,18 @@ module.exports = {
       rules: [
          {
             test: /\.html$/,
-            use: ["html-loader"],
+            use: ['html-loader'],
          },
          {
             test: /\.css$/,
             use: [
                MiniCssExtractPlugin.loader,
-               { loader: "css-loader", options: { url: false } },
+               { loader: 'css-loader', options: { url: false } },
                {
-                  loader: "postcss-loader",
+                  loader: 'postcss-loader',
                   options: {
                      postcssOptions: {
-                        plugins: ["postcss-preset-env"],
+                        plugins: ['postcss-preset-env'],
                      },
                   },
                },
@@ -79,49 +82,49 @@ module.exports = {
             test: /\.scss$/,
             use: [
                MiniCssExtractPlugin.loader,
-               { loader: "css-loader", options: { url: false } },
+               { loader: 'css-loader', options: { url: false } },
                {
-                  loader: "postcss-loader",
+                  loader: 'postcss-loader',
                   options: {
                      postcssOptions: {
-                        plugins: ["postcss-preset-env"],
+                        plugins: ['postcss-preset-env'],
                      },
                   },
                },
-               "sass-loader",
+               'sass-loader',
             ],
          },
          {
             test: /\.js$/,
             exclude: /node_modules/,
-            use: ["babel-loader"],
+            use: ['babel-loader'],
          },
          {
             test: /\.ico$/,
             use: {
-               loader: "file-loader",
-               options: { name: "favicon.ico", outputPath: "assets/favicon" },
+               loader: 'file-loader',
+               options: { name: 'favicon.ico', outputPath: 'assets/favicon' },
             },
          },
          {
             test: /\.svg$/,
             use: {
-               loader: "file-loader",
-               options: { name: "[name].[ext]", esModule: false, outputPath: "assets/svg" },
+               loader: 'file-loader',
+               options: { name: '[name].[ext]', esModule: false, outputPath: 'assets/svg' },
             },
          },
          {
             test: /\.(jpeg|png|jpg|gif)$/,
             use: {
-               loader: "file-loader",
-               options: { name: "[name].[ext]", esModule: false, outputPath: "assets/images" },
+               loader: 'file-loader',
+               options: { name: '[name].[ext]', esModule: false, outputPath: 'assets/images' },
             },
          },
          {
             test: /\.(ttf|woff|woff2)$/,
             use: {
-               loader: "file-loader",
-               options: { name: "[name].[ext]", esModule: false, outputPath: "assets/fonts" },
+               loader: 'file-loader',
+               options: { name: '[name].[ext]', esModule: false, outputPath: 'assets/fonts' },
             },
          },
       ],

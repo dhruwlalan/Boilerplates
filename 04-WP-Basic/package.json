@@ -1,15 +1,15 @@
 {
-   "name": "wp-basic",
+   "name": "webpack-basic-template",
    "version": "1.0.0",
-   "description": "",
-   "main": "index.js",
+   "main": "main.js",
    "author": "dhruw",
    "license": "MIT",
    "scripts": {
-      "start": "webpack-dev-server --config configs/webpack.start.js --open",
+      "start": "webpack-dev-server --config configs/webpack.start.js",
       "prod": "webpack --config configs/webpack.prod.js",
       "lint": "eslint .",
-      "lint:fix": "eslint --fix"
+      "lint:fix": "eslint --fix",
+      "wba": "webpack-bundle-analyzer dist/stats.json"
    },
    "dependencies": {},
    "devDependencies": {
@@ -30,7 +30,7 @@
       "html-webpack-plugin": "^4.3.0",
       "mini-css-extract-plugin": "^0.10.0",
       "optimize-css-assets-webpack-plugin": "^5.0.3",
-      "postcss": "^8.1.10",
+      "postcss": "^8.2.2",
       "postcss-loader": "^4.1.0",
       "postcss-preset-env": "^6.7.0",
       "prettier": "^2.2.1",
