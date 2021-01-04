@@ -1,0 +1,969 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.1",
+  "hash": "8a242a0b70a97d4bc8d6",
+  "time": 6573,
+  "builtAt": 1609779143363,
+  "publicPath": "",
+  "outputPath": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\public",
+  "assetsByChunkName": {
+    "index": [
+      "style.2d9c12a4dd9584a12e57.css",
+      "index.71e3219783dd73de3dc2.bundle.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "assets/favicon/favicon.ico",
+      "size": 15406,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "index.71e3219783dd73de3dc2.bundle.js",
+      "size": 978,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "index"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "style.2d9c12a4dd9584a12e57.css",
+      "size": 314,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "index"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "index": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "style.2d9c12a4dd9584a12e57.css",
+        "index.71e3219783dd73de3dc2.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "index": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "style.2d9c12a4dd9584a12e57.css",
+        "index.71e3219783dd73de3dc2.bundle.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 695,
+      "names": [
+        "index"
+      ],
+      "files": [
+        "style.2d9c12a4dd9584a12e57.css",
+        "index.71e3219783dd73de3dc2.bundle.js"
+      ],
+      "hash": "5e704850484465701512",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "name": "./client/sass/main.scss",
+          "index": 2,
+          "index2": 1,
+          "size": 39,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+          "issuerId": null,
+          "issuerName": "./client/assets/assets.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "name": "./client/main.js"
+            },
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "name": "./client/assets/assets.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js 9104cd031fccd9eea2e63dc5e90297ba",
+              "module": "./client/main.js + 2 modules",
+              "moduleName": "./client/main.js + 2 modules",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../sass/main.scss",
+              "loc": "2:0-27"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "// extracted by mini-css-extract-plugin"
+        },
+        {
+          "id": 1,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js 9104cd031fccd9eea2e63dc5e90297ba",
+          "name": "./client/main.js + 2 modules",
+          "index": 0,
+          "index2": 4,
+          "size": 335,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+            "assets/favicon/favicon.ico"
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "loc": "index"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "modules": [
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "name": "./client/main.js",
+              "index": 0,
+              "index2": 4,
+              "size": 49,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+                  "loc": "index"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is an entry point"
+              ],
+              "depth": 0,
+              "source": "///ASSETS///\nimport './assets/assets'; ///MAIN///"
+            },
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "name": "./client/assets/assets.js",
+              "index": 1,
+              "index2": 3,
+              "size": 211,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "issuerId": null,
+              "issuerName": "./client/main.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+                  "name": "./client/main.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+                  "module": "./client/main.js",
+                  "moduleName": "./client/main.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./assets/assets",
+                  "loc": "2:0-25"
+                }
+              ],
+              "usedExports": false,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": 1,
+              "source": "///SASS///\nimport '../sass/main.scss'; ///ASSETS///\n\nimport './favicon/favicon.ico'; ///HMR///\n\nif (process.env.NODE_ENV === 'development') {\n  require('webpack-hot-middleware/client?reload=true&noInfo=true');\n}"
+            },
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\file-loader\\dist\\cjs.js??ref--8!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\favicon\\favicon.ico",
+              "name": "./client/assets/favicon/favicon.ico",
+              "index": 4,
+              "index2": 2,
+              "size": 70,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [],
+              "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "issuerId": null,
+              "issuerName": "./client/assets/assets.js",
+              "issuerPath": [
+                {
+                  "id": null,
+                  "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+                  "name": "./client/main.js"
+                },
+                {
+                  "id": null,
+                  "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+                  "name": "./client/assets/assets.js"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [
+                "assets/favicon/favicon.ico"
+              ],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+                  "module": "./client/assets/assets.js",
+                  "moduleName": "./client/assets/assets.js",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "./favicon/favicon.ico",
+                  "loc": "4:0-31"
+                }
+              ],
+              "usedExports": false,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 2,
+              "source": "export default __webpack_public_path__ + \"assets/favicon/favicon.ico\";"
+            }
+          ],
+          "filteredModules": 0
+        },
+        {
+          "id": "",
+          "identifier": "css C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+          "index": 3,
+          "index2": 0,
+          "size": 321,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "issuerId": 0,
+          "issuerName": "./client/sass/main.scss",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "name": "./client/main.js"
+            },
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "name": "./client/assets/assets.js"
+            },
+            {
+              "id": 0,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "name": "./client/sass/main.scss"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "module": "./client/sass/main.scss",
+              "moduleName": "./client/sass/main.scss"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "index",
+          "request": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+      "name": "./client/sass/main.scss",
+      "index": 2,
+      "index2": 1,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+      "issuerId": null,
+      "issuerName": "./client/assets/assets.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "name": "./client/main.js"
+        },
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+          "name": "./client/assets/assets.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js 9104cd031fccd9eea2e63dc5e90297ba",
+          "module": "./client/main.js + 2 modules",
+          "moduleName": "./client/main.js + 2 modules",
+          "type": "harmony side effect evaluation",
+          "userRequest": "../sass/main.scss",
+          "loc": "2:0-27"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "// extracted by mini-css-extract-plugin"
+    },
+    {
+      "id": 1,
+      "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js 9104cd031fccd9eea2e63dc5e90297ba",
+      "name": "./client/main.js + 2 modules",
+      "index": 0,
+      "index2": 4,
+      "size": 335,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [
+        "assets/favicon/favicon.ico"
+      ],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "loc": "index"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "modules": [
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "name": "./client/main.js",
+          "index": 0,
+          "index2": 4,
+          "size": 49,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "loc": "index"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is an entry point"
+          ],
+          "depth": 0,
+          "source": "///ASSETS///\nimport './assets/assets'; ///MAIN///"
+        },
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+          "name": "./client/assets/assets.js",
+          "index": 1,
+          "index2": 3,
+          "size": 211,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "issuerId": null,
+          "issuerName": "./client/main.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "name": "./client/main.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "module": "./client/main.js",
+              "moduleName": "./client/main.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./assets/assets",
+              "loc": "2:0-25"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "///SASS///\nimport '../sass/main.scss'; ///ASSETS///\n\nimport './favicon/favicon.ico'; ///HMR///\n\nif (process.env.NODE_ENV === 'development') {\n  require('webpack-hot-middleware/client?reload=true&noInfo=true');\n}"
+        },
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\file-loader\\dist\\cjs.js??ref--8!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\favicon\\favicon.ico",
+          "name": "./client/assets/favicon/favicon.ico",
+          "index": 4,
+          "index2": 2,
+          "size": 70,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [],
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+          "issuerId": null,
+          "issuerName": "./client/assets/assets.js",
+          "issuerPath": [
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+              "name": "./client/main.js"
+            },
+            {
+              "id": null,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "name": "./client/assets/assets.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [
+            "assets/favicon/favicon.ico"
+          ],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+              "module": "./client/assets/assets.js",
+              "moduleName": "./client/assets/assets.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./favicon/favicon.ico",
+              "loc": "4:0-31"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export default __webpack_public_path__ + \"assets/favicon/favicon.ico\";"
+        }
+      ],
+      "filteredModules": 0
+    },
+    {
+      "id": "",
+      "identifier": "css C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+      "index": 3,
+      "index2": 0,
+      "size": 321,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+      "issuerId": 0,
+      "issuerName": "./client/sass/main.scss",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\main.js",
+          "name": "./client/main.js"
+        },
+        {
+          "id": null,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\babel-loader\\lib\\index.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\assets\\assets.js",
+          "name": "./client/assets/assets.js"
+        },
+        {
+          "id": 0,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "name": "./client/sass/main.scss"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "module": "./client/sass/main.scss",
+          "moduleName": "./client/sass/main.scss"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\public",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 3120,
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [
+            "*"
+          ],
+          "hash": "57f7e4c1550809d62d9d",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": 0,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\runtime\\api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2517,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "issuerId": 1,
+              "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "issuerPath": [
+                {
+                  "id": 1,
+                  "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+                  "name": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": 1,
+                  "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+                  "type": "harmony side effect evaluation",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "2:0-92"
+                },
+                {
+                  "moduleId": 1,
+                  "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+                  "module": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+                  "type": "harmony import specifier",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "3:30-57"
+                }
+              ],
+              "usedExports": [
+                "default"
+              ],
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot || '').concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+            },
+            {
+              "id": 1,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "index": 0,
+              "index2": 1,
+              "size": 603,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "!!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module uses module.id"
+              ],
+              "depth": 0,
+              "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--ss: sans-serif;--white: White}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.container{max-width:100rem;margin:0 auto}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2517,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "issuerId": 1,
+          "issuerName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "name": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "module": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "type": "harmony side effect evaluation",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "2:0-92"
+            },
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "module": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+              "type": "harmony import specifier",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "3:30-57"
+            }
+          ],
+          "usedExports": [
+            "default"
+          ],
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot || '').concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+        },
+        {
+          "id": 1,
+          "identifier": "C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+          "name": "./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./client/sass/main.scss",
+          "index": 0,
+          "index2": 1,
+          "size": 603,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "!!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\css-loader\\dist\\cjs.js??ref--6-1!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\postcss-loader\\dist\\cjs.js??ref--6-2!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\dhruw-pc\\Desktop\\GitRepos\\web-project-templates\\06-WP-Express\\client\\sass\\main.scss",
+              "loc": "mini-css-extract-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module uses module.id"
+          ],
+          "depth": 0,
+          "source": "// Imports\nimport ___CSS_LOADER_API_IMPORT___ from \"../../node_modules/css-loader/dist/runtime/api.js\";\nvar ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root{--ss: sans-serif;--white: White}body{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent}*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}body{-webkit-box-sizing:border-box;box-sizing:border-box}.container{max-width:100rem;margin:0 auto}\", \"\"]);\n// Exports\nexport default ___CSS_LOADER_EXPORT___;\n"
+        }
+      ],
+      "filteredModules": 0,
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--6-1!node_modules/postcss-loader/dist/cjs.js??ref--6-2!node_modules/sass-loader/dist/cjs.js!client/sass/main.scss"
+    }
+  ]
+}

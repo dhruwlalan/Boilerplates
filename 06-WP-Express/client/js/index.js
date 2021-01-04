@@ -1,4 +1,0 @@
-///ASSETS///
-import './assets';
-
-///MAIN///

@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const WebpackBar = require('webpackbar');
 const entries = require('./entries');
 
 module.exports = {
@@ -13,19 +15,26 @@ module.exports = {
       path: path.resolve(__dirname, '../public'),
    },
    stats: {
+      assets: true,
+      warnings: true,
+      errors: true,
+      colors: true,
       modules: false,
       builtAt: false,
       version: false,
       timings: false,
       entrypoints: false,
-      colors: true,
       hash: false,
-      warnings: true,
-      errors: true,
+      children: false,
    },
    plugins: [
       new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
       new CleanWebpackPlugin(),
+      new WebpackBar(),
+      new BundleAnalyzerPlugin({
+         analyzerMode: 'disabled',
+         generateStatsFile: true,
+      }),
    ],
    optimization: {
       minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
@@ -39,6 +48,9 @@ module.exports = {
             },
          },
       },
+   },
+   performance: {
+      hints: false,
    },
    module: {
       rules: [
