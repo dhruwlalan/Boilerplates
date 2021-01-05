@@ -1,8 +1,6 @@
 {
    "name": "webpack-express-userapi-template",
-   "version": "1.0.0",
    "author": "dhruw",
-   "license": "MIT",
    "scripts": {
       "start": "node server/server.js",
       "debug": "ndb server/server.js",

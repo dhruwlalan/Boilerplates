@@ -1,6 +1,6 @@
 {
    "name": "webpack-vue-template",
-   "version": "1.0.0",
+   "author": "dhruw",
    "scripts": {
       "start": "webpack-dev-server --config configs/webpack.start.js",
       "prod": "webpack --config configs/webpack.prod.js",

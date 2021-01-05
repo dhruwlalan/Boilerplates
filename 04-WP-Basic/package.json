@@ -1,9 +1,6 @@
 {
    "name": "webpack-basic-template",
-   "version": "1.0.0",
-   "main": "main.js",
    "author": "dhruw",
-   "license": "MIT",
    "scripts": {
       "start": "webpack-dev-server --config configs/webpack.start.js",
       "prod": "webpack --config configs/webpack.prod.js",

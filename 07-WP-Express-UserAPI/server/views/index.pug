@@ -4,11 +4,11 @@ extends base
 block append script
 	- if ( process.env.FENV === 'development')
 		script(type='text/javascript' src='/vendor.bundle.js')
-		script(type='text/javascript' src='/index.bundle.js')
+		script(type='text/javascript' src='/main.bundle.js')
 	- else
 		- if (bundle.vendor)
 			script(type='text/javascript' src=`/${bundle.vendor}`)
-		script(type='text/javascript' src=`/${bundle.index}`)
+		script(type='text/javascript' src=`/${bundle.main}`)
 
 block content
 	h1= msg

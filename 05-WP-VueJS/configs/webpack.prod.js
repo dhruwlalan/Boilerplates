@@ -10,7 +10,7 @@ const WebpackBar = require('webpackbar');
 
 module.exports = {
    mode: 'production',
-   entry: { index: path.resolve(__dirname, '../src/main.js') },
+   entry: { main: path.resolve(__dirname, '../src/main.js') },
    output: {
       filename: '[name].[contentHash].bundle.js',
       path: path.resolve(__dirname, '../dist'),
@@ -32,7 +32,7 @@ module.exports = {
       new HtmlWebpackPlugin({
          filename: 'index.html',
          template: path.resolve(__dirname, '../src', 'index.html'),
-         chunks: ['index'],
+         chunks: ['main'],
       }),
       new MiniCssExtractPlugin({ filename: 'style.[contentHash].css' }),
       new CleanWebpackPlugin(),
